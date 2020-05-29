@@ -5,12 +5,13 @@
 
 * {
     font-family: 'Lato', sans-serif;
-    color: #777;
+    color:$color-prim;
     box-sizing: border-box;
   }
   
   p {
     line-height: 1.45em;
+    color:$color-prim;
   }
   
   a {
