@@ -1,8 +1,21 @@
 
-
+/*Functional color variables*/
 
 $color-prim:#241e4e;
 $color-sec:#960200;
 $color-links:#ce6c47;
 $color-ter:#ffd046;
 $color-highlight:#eadaa2;
+
+/* Font stack*/
+$stack-sans-serif: Helvetica,Arial,sans-serif; 
+$stack-lato:'Lato',$stack-sans-serif;
+$stack-abolition:'Aboloition Regular',$stack-sans-serif;
+$lucidia-bright-font-stack: "Lucida Bright", Georgia, serif !default;
+$raleway-font-stack: 'Raleway', sans-serif !default;
+$frankin-gothic-font-stack: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif !default;
+
+/* Media query break points*/
+
+$brk-narrow:'(max-width: 760px)';
+$brk-wide:'(max-width:1024px)';

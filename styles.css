@@ -4,6 +4,9 @@
 /* ============================================= */
 /* Utilities Imports */
 /* ============================================= */
+/*Functional color variables*/
+/* Font stack*/
+/* Media query break points*/
 /* ============================================= */
 /* Base Imports */
 /* ============================================= */
@@ -385,7 +388,7 @@ template {
 /* ============================================= */
 /* line 6, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
   color: #241e4e;
   box-sizing: border-box;
 }
@@ -453,27 +456,27 @@ a {
 
 /* line 15, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .default {
-  background-color: #51ddfc;
+  background-color: #241e4e;
 }
 
 /* line 19, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .error {
-  background-color: #e4757a;
+  background-color: #960200;
 }
 
 /* line 23, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .info {
-  background-color: #927bc1;
+  background-color: #ce6c47;
 }
 
 /* line 27, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .success {
-  background-color: #63cc82;
+  background-color: #ffd046;
 }
 
 /* line 31, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .warning {
-  background-color: #fd7856;
+  background-color: #eadaa2;
 }
 
 /* ============================================= */
@@ -491,7 +494,7 @@ a {
   margin: 10px auto 0;
   border: none;
   padding: 10px;
-  border-bottom: 5px solid #58e1c1;
+  border-bottom: 5px solid #ce6c47;
 }
 
 /* line 18, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_forms.scss */
@@ -528,7 +531,7 @@ a {
 /* line 23, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_navigation.scss */
 .nav-link:hover {
   color: #fff;
-  background-color: #58e1c1;
+  background-color: #eadaa2;
 }
 
 /* ============================================= */
@@ -552,7 +555,7 @@ a {
   margin-top: 10px;
   max-width: 100%;
   padding: 13px;
-  border: 1px solid #ccc;
+  border: 1px solid #241e4e;
 }
 
 /* line 24, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_images.scss */
@@ -588,7 +591,7 @@ a {
 
 /* line 23, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
 .theme.col-1 {
-  background-color: #927bc1;
+  background-color: #241e4e;
 }
 
 /* line 27, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
