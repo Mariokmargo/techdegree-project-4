@@ -386,14 +386,14 @@ template {
 /* line 6, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
 * {
   font-family: 'Lato', sans-serif;
-  color: tomato;
+  color: #241e4e;
   box-sizing: border-box;
 }
 
 /* line 12, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
 p {
   line-height: 1.45em;
-  color: tomato;
+  color: #241e4e;
 }
 
 /* line 17, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
@@ -404,33 +404,34 @@ a {
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
-/* line 26, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
+/* line 28, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
 .headline-primary {
-  color: #58e1c1;
+  color: #241e4e;
   margin-left: 10px;
 }
 
-/* line 31, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
+/* line 33, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
 .headline-secondary {
   font-weight: 300;
-  color: #777;
+  color: #960200;
 }
 
-/* line 36, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
+/* line 38, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
 .link {
-  color: #51ddfc;
+  color: #ce6c47;
   font-weight: 700;
 }
 
-/* line 41, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
+/* line 43, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/base/_typography.scss */
 .blockquote {
   font-size: 1.5em;
   font-weight: 300;
   font-style: italic;
   margin-left: 20px;
   padding-left: 20px;
-  border-left: 8px solid #58e1c1;
+  border-left: 8px solid #960200;
   border-radius: 5px;
+  color: #ffd046;
 }
 
 /* ============================================= */
