@@ -454,27 +454,41 @@ a {
   border-radius: 5px;
 }
 
-/* line 15, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
+  .btn {
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 20, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
+
+/* line 28, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .default {
   background-color: #241e4e;
 }
 
-/* line 19, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
+/* line 32, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .error {
   background-color: #960200;
 }
 
-/* line 23, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
+/* line 36, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .info {
   background-color: #ce6c47;
 }
 
-/* line 27, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
+/* line 40, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .success {
   background-color: #ffd046;
 }
 
-/* line 31, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
+/* line 44, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_buttons.scss */
 .warning {
   background-color: #eadaa2;
 }
@@ -518,7 +532,16 @@ a {
   flex-direction: column;
 }
 
-/* line 12, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_navigation.scss */
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* line 18, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_navigation.scss */
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -528,7 +551,14 @@ a {
   transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
-/* line 23, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 18, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_navigation.scss */
+  .nav-link {
+    flex-basis: 100px;
+  }
+}
+
+/* line 33, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_navigation.scss */
 .nav-link:hover {
   color: #fff;
   background-color: #eadaa2;
@@ -565,6 +595,14 @@ a {
   margin-right: auto;
 }
 
+@media (min-width: 768px) {
+  /* line 30, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_images.scss */
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
@@ -573,14 +611,31 @@ a {
   padding: 0 10px;
 }
 
-/* line 9, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 5, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 16, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
 }
 
-/* line 15, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+@media (min-width: 768px) {
+  /* line 16, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* line 30, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -589,173 +644,232 @@ a {
   border-radius: 5px;
 }
 
-/* line 23, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-1 {
-  background-color: #241e4e;
-}
-
-/* line 27, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-2 {
-  background-color: #fd7856;
-}
-
-/* line 31, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-3 {
-  background-color: #deb2ee;
-}
-
-/* line 35, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-4 {
-  background-color: #7ee6fd;
-}
-
-/* line 39, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-5 {
-  background-color: #88d9a0;
-}
-
-/* line 43, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-6 {
-  background-color: #4da2bb;
-}
-
-/* line 47, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-7 {
-  background-color: #ec9fa3;
-}
-
-/* line 51, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-8 {
-  background-color: #fd9f85;
-}
-
-/* line 55, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-9 {
-  background-color: #e4757a;
-}
-
-/* line 59, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-10 {
-  background-color: #63cc82;
-}
-
-/* line 63, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-11 {
-  background-color: #51ddfc;
-}
-
-/* line 67, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.theme.col-12 {
-  background-color: #80e8d1;
-}
-
-/* line 71, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
-.card {
-  flex-basis: 100%;
-}
-
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
 @media (min-width: 768px) {
-  /* line 6, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 13, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 19, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
-  .row {
-    flex-direction: row;
-  }
-  /* line 23, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 30, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
   [class^=col] {
     display: flex;
     justify-content: center;
     margin-top: 0;
     align-items: center;
   }
-  /* line 30, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+}
+
+@media (min-width: 768px) {
+  /* line 47, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
-  /* line 34, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+}
+
+/* line 54, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-1 {
+  background-color: #241e4e;
+}
+
+@media (min-width: 768px) {
+  /* line 54, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-1 {
+    flex-basis: 8.33%;
+  }
+}
+
+/* line 62, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-2 {
+  background-color: #fd7856;
+}
+
+@media (min-width: 768px) {
+  /* line 62, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-2 {
+    flex-basis: 16.67%;
+  }
+}
+
+/* line 69, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-3 {
+  background-color: #deb2ee;
+}
+
+@media (min-width: 768px) {
+  /* line 69, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-3 {
+    flex-basis: 25.00%;
+  }
+}
+
+/* line 77, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-4 {
+  background-color: #7ee6fd;
+}
+
+@media (min-width: 768px) {
+  /* line 77, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-4 {
+    flex-basis: 33.33%;
+  }
+}
+
+/* line 85, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-5 {
+  background-color: #88d9a0;
+}
+
+@media (min-width: 768px) {
+  /* line 85, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-5 {
+    flex-basis: 41.67%;
+  }
+}
+
+/* line 92, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-6 {
+  background-color: #4da2bb;
+}
+
+@media (min-width: 768px) {
+  /* line 92, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-6 {
+    flex-basis: 50.00%;
+  }
+}
+
+/* line 100, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-7 {
+  background-color: #ec9fa3;
+}
+
+@media (min-width: 768px) {
+  /* line 100, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-7 {
+    flex-basis: 58.33%;
+  }
+}
+
+/* line 110, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-8 {
+  background-color: #fd9f85;
+}
+
+@media (min-width: 768px) {
+  /* line 110, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-8 {
+    flex-basis: 66.67%;
+  }
+}
+
+/* line 118, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-9 {
+  background-color: #e4757a;
+}
+
+@media (min-width: 768px) {
+  /* line 118, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-9 {
+    flex-basis: 75.00%;
+  }
+}
+
+/* line 126, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-10 {
+  background-color: #63cc82;
+}
+
+@media (min-width: 768px) {
+  /* line 126, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-10 {
+    flex-basis: 83.33%;
+  }
+}
+
+/* line 135, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-11 {
+  background-color: #51ddfc;
+}
+
+@media (min-width: 768px) {
+  /* line 135, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-11 {
+    flex-basis: 91.67%;
+  }
+}
+
+/* line 143, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.theme.col-12 {
+  background-color: #80e8d1;
+}
+
+@media (min-width: 768px) {
+  /* line 143, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .theme.col-12 {
+    flex-basis: 100%;
+  }
+}
+
+/* line 151, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+.card {
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 155, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_grid.scss */
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: 768px) {
+  /* line 10, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-1 {
     flex-basis: 8.33%;
   }
-  /* line 38, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 14, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-2 {
     flex-basis: 16.67%;
   }
-  /* line 42, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 18, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-3 {
     flex-basis: 25.00%;
   }
-  /* line 46, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 22, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-4 {
     flex-basis: 33.33%;
   }
-  /* line 50, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 26, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-5 {
     flex-basis: 41.67%;
   }
-  /* line 54, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 30, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-6 {
     flex-basis: 50.00%;
   }
-  /* line 58, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 34, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-7 {
     flex-basis: 58.33%;
   }
-  /* line 62, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 38, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-8 {
     flex-basis: 66.67%;
   }
-  /* line 66, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 42, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-9 {
     flex-basis: 75.00%;
   }
-  /* line 70, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 46, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-10 {
     flex-basis: 83.33%;
   }
-  /* line 74, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 50, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-11 {
     flex-basis: 91.67%;
   }
-  /* line 78, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
+  /* line 54, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
   .col-12 {
     flex-basis: 100%;
-  }
-  /* line 82, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  /* line 88, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
-  .nav-link {
-    flex-basis: 100px;
-  }
-  /* line 92, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
-  .btn {
-    padding: 10px 30px;
-  }
-  /* line 96, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
-  .btn + .btn {
-    margin-left: 10px;
-  }
-  /* line 100, ../../../OneDrive/Escritorio/Coding projects/techdegree-project-4/scss/components/_media-queries.scss */
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 

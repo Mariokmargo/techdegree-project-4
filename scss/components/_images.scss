@@ -26,3 +26,13 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .logo {
+
+    @media #{$brk-narrow} {
+      margin-left: initial;
+      margin-right: initial;
+    }
+
+  }
+   

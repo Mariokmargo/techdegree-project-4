@@ -17,5 +17,4 @@ $frankin-gothic-font-stack: "Franklin Gothic Medium", "Franklin Gothic", "ITC Fr
 
 /* Media query break points*/
 
-$brk-narrow:'(max-width: 760px)';
-$brk-wide:'(max-width:1024px)';
+$brk-narrow:'(min-width: 768px)';
